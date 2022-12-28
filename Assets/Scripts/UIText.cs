@@ -19,6 +19,7 @@ public class UIText : MonoBehaviour {
 
     private void Start() {
         // Get children of GameOverScreen and set them as active
+        _turnText = transform.GetChild(0).gameObject;
         _turnText.SetActive(true);
         _turnTextTMP = _turnText.GetComponent<TextMeshProUGUI>();
 
